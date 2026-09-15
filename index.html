@@ -4,216 +4,492 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Peediya.Store — Better Products | Better Deals</title>
 <meta name="description" content="Peediya.Store — Trending products and best deals for Kerala customers.">
+
 <style>
 :root{--ink:#081014;--lime:#caff45;--green:#08b85b;--cream:#f7f6ef;--muted:#687078;--card:#fff;--line:#e8e8e2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:10}.nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:24px;padding:14px 22px}.brand{font-weight:900;font-size:24px;white-space:nowrap}.brand span{color:var(--lime)}.tag{font-size:11px;color:#d4d8d9;margin-top:2px}.search{flex:1;max-width:390px;background:#fff;border-radius:30px;padding:12px 18px;color:#777;border:0}.navlinks{display:flex;gap:18px;font-weight:700;font-size:14px}.hero{background:linear-gradient(90deg,#f0f9e5,#fff6df);padding:54px 22px}.hero-in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}.pill{display:inline-block;background:var(--lime);padding:8px 16px;border-radius:22px;font-weight:800}.hero h1{font-size:64px;line-height:.95;margin:16px 0}.hero p{font-size:19px;max-width:560px;color:#30383b}.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:15px 22px;border-radius:30px;font-weight:800;margin-top:14px}.hero-img{min-height:330px;border-radius:24px;background:radial-gradient(circle at 65% 45%,#d9ff8a 0 10%,transparent 11%),linear-gradient(135deg,#dfe8d4,#fff);display:flex;align-items:center;justify-content:center;font-size:80px;box-shadow:0 20px 60px #0001}.section{max-width:1200px;margin:auto;padding:40px 22px}.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.cat{padding:18px 10px;border:1px solid var(--line);border-radius:18px;text-align:center;background:#fff;font-weight:700}.cat b{display:block;font-size:30px;margin-bottom:8px}.title{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.title h2{font-size:30px;margin:0}.products{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #0000000b}.pic{height:190px;background:linear-gradient(145deg,#eef2ee,#ddd);display:flex;align-items:center;justify-content:center;font-size:65px}.info{padding:13px}.badge{display:inline-block;background:#ff4e3f;color:#fff;padding:5px 8px;border-radius:10px;font-size:11px;font-weight:800;margin-bottom:7px}.product h3{font-size:15px;margin:4px 0 8px}.old{text-decoration:line-through;color:#999;font-size:13px}.price{color:var(--green);font-size:20px;font-weight:900}.order{display:block;background:#08b85b;color:white;text-align:center;padding:10px;border-radius:12px;margin-top:12px;font-weight:800;font-size:13px}.deal{max-width:1200px;margin:10px auto 35px;padding:30px 35px;background:var(--ink);color:#fff;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:20px}.deal strong{font-size:40px;color:var(--lime)}.why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.why div{padding:20px;border-bottom:1px solid var(--line)}.story{background:#eff9d9;border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.story h2{font-size:32px}.ig{display:flex;gap:10px;overflow:hidden}.ig div{min-width:120px;height:100px;border-radius:14px;background:linear-gradient(135deg,#dfe7d6,#e9cda5);display:flex;align-items:center;justify-content:center;font-size:35px}.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.review{padding:20px;border:1px solid var(--line);border-radius:16px}.stars{letter-spacing:3px}.faq{background:var(--cream);padding:28px;border-radius:20px}.faq details{padding:15px 0;border-bottom:1px solid #ddd}.footer{background:var(--ink);color:#fff;padding:35px 22px}.footer-in{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.lime{color:var(--lime)}
-@media(max-width:850px){.navlinks{display:none}.hero-in{grid-template-columns:1fr}.hero h1{font-size:48px}.cats{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.why{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr}.reviews{grid-template-columns:1fr}.deal{display:block}.search{display:none}}
-@media(max-width:480px){.hero{padding:35px 16px}.hero h1{font-size:42px}.section{padding:30px 16px}.cats{grid-template-columns:repeat(2,1fr)}.products{gap:10px}.pic{height:145px}.deal{margin:10px 16px 25px;padding:25px}.deal strong{font-size:30px}}
-</style></head>
-<body>
-<header class="top"><nav class="nav"><div><div class="brand">Peediya.<span>Store</span></div><div class="tag">Better Products | Better Deals</div></div><input class="search" placeholder="Search for products..."><div class="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#contact">Contact</a></div></nav></header>
-<section class="hero" id="home"><div class="hero-in"><div><span class="pill">Welcome to</span><h1>Peediya.<span class="lime">Store</span></h1><p>Trending Products • Best Deals • Kerala's Favourite</p><p>Useful products for a better you! 🛍️</p><a class="btn" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp →</a></div><div class="hero-img">🛍️ 🎧 ⌚ 🧴</div></div></section>
-<section class="section" id="categories"><div class="title"><h2>Shop by Category</h2></div><div class="cats"><div class="cat"><b>🍳</b>Home & Kitchen</div><div class="cat"><b>🎧</b>Electronics</div><div class="cat"><b>👕</b>Fashion</div><div class="cat"><b>🧴</b>Beauty</div><div class="cat"><b>⌚</b>Accessories</div><div class="cat"><b>•••</b>More</div></div></section>
-<section class="section" id="products"><div class="title"><h2>🔥 Trending Products</h2><a href="#products">View All →</a></div><div class="products">
-<div class="product"><div class="pic">🥕</div><div class="info"><span class="badge">🔥 BEST SELLER</span><h3>Mini Food Chopper</h3><span class="old">₹499</span> <span class="price">₹229</span><a class="order" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp</a></div></div>
-<div class="product"><div class="pic">🎧</div><div class="info"><span class="badge">🔥 HOT DEAL</span><h3>TWS Wireless Earbuds</h3><span class="old">₹899</span> <span class="price">₹249</span><a class="order" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp</a></div></div>
-<div class="product"><div class="pic">🧴</div><div class="info"><span class="badge">🔥 TRENDING</span><h3>750ml Water Bottle</h3><span class="old">₹599</span> <span class="price">₹249</span><a class="order" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp</a></div></div>
-<div class="product"><div class="pic">⌚</div><div class="info"><span class="badge">LIMITED STOCK</span><h3>Smart Watch</h3><span class="old">₹1,299</span> <span class="price">₹399</span><a class="order" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp</a></div></div>
-<div class="product"><div class="pic">💡</div><div class="info"><span class="badge">POPULAR</span><h3>LED Ring Light</h3><span class="old">₹799</span> <span class="price">₹299</span><a class="order" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp</a></div></div>
-</div></section>
-<section class="deal"><div><div>BEST DEALS</div><strong>UPTO 70% OFF</strong><div>Don't miss today's offers!</div></div><a class="btn" href="#products">Shop Now →</a></section>
-<section class="section"><h2>Why Peediya.Store?</h2><div class="why"><div>🚚 <b>Fast Delivery</b><br><small>Kerala wide</small></div><div>🛡️ <b>Trusted Products</b><br><small>Quality assured</small></div><div>🏷️ <b>Affordable Prices</b><br><small>Best deals</small></div><div>🎧 <b>Easy Support</b><br><small>WhatsApp support</small></div></div></section>
-<section class="section"><div class="story"><div><h2>Our Story</h2><p>Peediya.Store was started with a simple goal — to bring useful, trending and affordable products to customers in Kerala.</p><p>We carefully select practical products and focus on great deals and easy ordering.</p><a class="btn" href="#contact">Learn More →</a></div><div style="font-size:90px;text-align:center">🛍️✨</div></div></section>
-<section class="section"><div class="title"><h2>📸 Follow Us on Instagram</h2><a href="#">@peediya.store</a></div><div class="ig"><div>⌚</div><div>🎧</div><div>🧴</div><div>🥕</div><div>🕶️</div><div>👜</div></div></section>
-<section class="section"><div class="title"><h2>What Our Customers Say</h2></div><div class="reviews"><div class="review"><b>Fathima</b><div class="stars">★★★★★</div><p>Product quality super! Fast delivery too. Will definitely order again.</p></div><div class="review"><b>Rizwan</b><div class="stars">★★★★★</div><p>Very good service. Affordable price and neat packaging.</p></div><div class="review"><b>Ayesha</b><div class="stars">★★★★★</div><p>Loved the product! Keep up the good work, Peediya.Store ❤️</p></div></div></section>
-<section class="section"><div class="faq"><h2>FAQs</h2><details><summary>How can I order?</summary><p>Click any WhatsApp order button and send your product name.</p></details><details><summary>Do you deliver in Kerala?</summary><p>Yes, delivery availability and charges can be confirmed on WhatsApp.</p></details><details><summary>How can I contact support?</summary><p>Use the WhatsApp button below for quick support.</p></details></div></section>
-<footer class="footer" id="contact"><div class="footer-in"><div><div class="brand">Peediya.<span>Store</span></div><p>Better Products | Better Deals</p></div><div><b class="lime">Contact Us</b><p>WhatsApp: +91 XXXXX XXXXX</p><p>Instagram: @peediya.store</p></div><div><b class="lime">Quick Links</b><p><a href="#home">Home</a> · <a href="#products">Products</a> · <a href="#categories">Categories</a></p></div></div></footer
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}
+.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:10}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;gap:24px;padding:14px 22px}
+.brand{font-weight:900;font-size:24px;white-space:nowrap}.brand span{color:var(--lime)}
+.tag{font-size:11px;color:#d4d8d9;margin-top:2px}
+.search{flex:1;max-width:390px;background:#fff;border-radius:30px;padding:12px 18px;color:#777;border:0}
+.navlinks{display:flex;gap:18px;font-weight:700;font-size:14px}
+.hero{background:linear-gradient(90deg,#f0f9e5,#fff6df);padding:54px 22px}
+.hero-in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}
+.pill{display:inline-block;background:var(--lime);padding:8px 16px;border-radius:22px;font-weight:800}
+.hero h1{font-size:64px;line-height:.95;margin:16px 0}
+.hero p{font-size:19px;max-width:560px;color:#30383b}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:15px 22px;border-radius:30px;font-weight:800;margin-top:14px}
+.hero-img{min-height:330px;border-radius:24px;background:radial-gradient(circle at 65% 45%,#d9ff8a 0 10%,transparent 11%),linear-gradient(135deg,#dfe8d4,#fff);display:flex;align-items:center;justify-content:center;font-size:80px;box-shadow:0 20px 60px #0001}
+.section{max-width:1200px;margin:auto;padding:40px 22px}
+.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.cat{padding:18px 10px;border:1px solid var(--line);border-radius:18px;text-align:center;background:#fff;font-weight:700}
+.cat b{display:block;font-size:30px;margin-bottom:8px}
+.title{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.title h2{font-size:30px;margin:0}
+.products{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.product{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 8px 24px #0000000b}
+.pic{height:190px;background:linear-gradient(145deg,#eef2ee,#ddd);display:flex;align-items:center;justify-content:center;font-size:65px}
+.info{padding:13px}
+.badge{display:inline-block;background:#ff4e3f;color:#fff;padding:5px 8px;border-radius:10px;font-size:11px;font-weight:800;margin-bottom:7px}
+.product h3{font-size:15px;margin:4px 0 8px}
+.old{text-decoration:line-through;color:#999;font-size:13px}
+.price{color:var(--green);font-size:20px;font-weight:900}
+.order{display:block;background:#08b85b;color:white;text-align:center;padding:10px;border-radius:12px;margin-top:12px;font-weight:800;font-size:13px}
+.deal{max-width:1200px;margin:10px auto 35px;padding:30px 35px;background:var(--ink);color:#fff;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.deal strong{font-size:40px;color:var(--lime)}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.why div{padding:20px;border-bottom:1px solid var(--line)}
+.story{background:#eff9d9;border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.story h2{font-size:32px}
+.ig{display:flex;gap:10px;overflow:hidden}
+.ig div{min-width:120px;height:100px;border-radius:14px;background:linear-gradient(135deg,#dfe7d6,#e9cda5);display:flex;align-items:center;justify-content:center;font-size:35px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.review{padding:20px;border:1px solid var(--line);border-radius:16px}
+.stars{letter-spacing:3px}
+.faq{background:var(--cream);padding:28px;border-radius:20px}
+.faq details{padding:15px 0;border-bottom:1px solid #ddd}
+.footer{background:var(--ink);color:#fff;padding:35px 22px}
+.footer-in{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.lime{color:var(--lime)}
 
-  <title>Peediya.Store</title>
-  <meta name="description" content="Peediya.Store - Trending Products & Best Deals">
+@media(max-width:850px){
+.navlinks{display:none}.hero-in{grid-template-columns:1fr}.hero h1{font-size:48px}
+.cats{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}
+.why{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr}
+.reviews{grid-template-columns:1fr}.deal{display:block}.search{display:none}
+}
+@media(max-width:480px){
+.hero{padding:35px 16px}.hero h1{font-size:42px}.section{padding:30px 16px}
+.cats{grid-template-columns:repeat(2,1fr)}.products{gap:10px}.pic{height:145px}
+.deal{margin:10px 16px 25px;padding:25px}.deal strong{font-size:30px}
+}
 
-  <!-- Supabase -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 18px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 28px;
-    }
-
-    header p {
-      margin-top: 6px;
-      color: #ddd;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 45px 20px;
-      background: white;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .products {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .product {
-      background: white;
-      border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    .product h3 {
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    .whatsapp {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-
-    footer p {
-      margin: 6px 0;
-    }
-  </style>
+.admin{background:#f7f6ef;border:1px solid #e8e8e2;border-radius:20px;padding:24px;margin-top:25px}
+.admin h3{margin-top:0}
+.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.formgrid input{padding:12px;border:1px solid #ddd;border-radius:10px;width:100%}
+.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.admin-btn{border:0;background:var(--ink);color:#fff;padding:12px 18px;border-radius:10px;font-weight:800;cursor:pointer}
+.danger{background:#d83a2e}.admin-note{font-size:13px;color:#687078}
+.admin-toggle{cursor:pointer;font-size:13px;color:#687078;text-decoration:underline}
+.manage-item{padding:12px 0;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:10px}
+.manage-item img{width:50px;height:50px;object-fit:cover;border-radius:8px}
+.manage-text{flex:1}.manage-actions{display:flex;gap:6px;flex-wrap:wrap}
+.small-btn{border:0;background:var(--ink);color:#fff;padding:7px 10px;border-radius:8px;font-weight:700;cursor:pointer}
+.edit-btn{background:#08b85b}.cancel-btn{background:#777}
+@media(max-width:600px){.formgrid{grid-template-columns:1fr}.manage-item{align-items:flex-start}.manage-actions{width:100%}}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Peediya.Store 🛍️</h1>
-    <p>Trending Products & Best Deals 🔥</p>
-  </header>
+<header class="top">
+<nav class="nav">
+<div>
+<div class="brand">Peediya.<span>Store</span></div>
+<div class="tag">Better Products | Better Deals</div>
+</div>
+<input class="search" placeholder="Search for products...">
+<div class="navlinks">
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to Peediya.Store</h2>
-    <p>Useful & Trending Products at Great Prices</p>
+<section class="hero" id="home">
+<div class="hero-in">
+<div>
+<span class="pill">Welcome to</span>
+<h1>Peediya.<span class="lime">Store</span></h1>
+<p>Trending Products • Best Deals • Kerala's Favourite</p>
+<p>Useful products for a better you! 🛍️</p>
+<a class="btn" href="https://wa.me/919207288645" target="_blank">💬 Order on WhatsApp →</a>
+</div>
+<div class="hero-img">🛍️ 🎧 ⌚ 🧴</div>
+</div>
+</section>
 
-    <a
-      class="whatsapp"
-      href="https://wa.me/919207288645"
-      target="_blank">
-      💬 Order on WhatsApp
-    </a>
-  </section>
+<section class="section" id="categories">
+<div class="title"><h2>Shop by Category</h2></div>
+<div class="cats">
+<div class="cat"><b>🍳</b>Home & Kitchen</div>
+<div class="cat"><b>🎧</b>Electronics</div>
+<div class="cat"><b>👕</b>Fashion</div>
+<div class="cat"><b>🧴</b>Beauty</div>
+<div class="cat"><b>⌚</b>Accessories</div>
+<div class="cat"><b>•••</b>More</div>
+</div>
+</section>
 
-  <section class="products">
+<section class="section" id="products">
+<div class="title"><h2>🔥 Trending Products</h2><a href="#products">View All →</a></div>
+<div class="products" id="productGrid"></div>
 
-    <div class="product">
-      <h3>🧽 Sponge Holder</h3>
-      <div class="price">₹75</div>
-      <a
-        class="whatsapp"
-        href="https://wa.me/919207288645?text=Hi%20Peediya.Store,%20I%20want%20Sponge%20Holder"
-        target="_blank">
-        Order Now
-      </a>
-    </div>
+<div class="admin">
+<h3>🛠️ Admin Panel <span class="admin-toggle" onclick="toggleAdmin()">(open/close)</span></h3>
 
-    <div class="product">
-      <h3>🗂️ 3-in-1 Organizer</h3>
-      <div class="price">₹120</div>
-      <a
-        class="whatsapp"
-        href="https://wa.me/919207288645?text=Hi%20Peediya.Store,%20I%20want%203-in-1%20Organizer"
-        target="_blank">
-        Order Now
-      </a>
-    </div>
+<div id="adminPanel" style="display:none">
+<p class="admin-note">Login once, then manage your products from your phone. Changes are online and visible to all visitors.</p>
 
-    <div class="product">
-      <h3>🧽 Scrubs & Sponges</h3>
-      <div class="price">₹73</div>
-      <a
-        class="whatsapp"
-        href="https://wa.me/919207288645?text=Hi%20Peediya.Store,%20I%20want%20Scrubs%20%26%20Sponges"
-        target="_blank">
-        Order Now
-      </a>
-    </div>
+<div id="loginBox">
+<div class="formgrid">
+<input id="loginEmail" type="email" placeholder="Admin email">
+<input id="loginPassword" type="password" placeholder="Password">
+</div>
+<div class="admin-actions">
+<button class="admin-btn" onclick="loginAdmin()">🔐 Login</button>
+</div>
+<p id="loginStatus" class="admin-note"></p>
+</div>
 
-  </section>
+<div id="editorBox" style="display:none">
+<div class="formgrid">
+<input id="pName" placeholder="Product name">
+<input id="pOld" type="number" placeholder="Old price (₹)">
+<input id="pPrice" type="number" placeholder="Selling price (₹)">
+<input id="pBadge" placeholder="Badge e.g. 🔥 HOT DEAL">
+<input id="pEmoji" placeholder="Emoji if no image e.g. 🧴">
+<input id="pImage" type="file" accept="image/*">
+</div>
 
-  <footer>
-    <p>© 2026 Peediya.Store</p>
-    <p>📧 shifushifinnot@gmail.com</p>
-  </footer>
+<div class="admin-actions">
+<button class="admin-btn" onclick="saveProduct()" id="saveBtn">➕ Add Product</button>
+<button class="admin-btn cancel-btn" onclick="clearForm()" id="cancelBtn" style="display:none">Cancel Edit</button>
+<button class="admin-btn danger" onclick="logoutAdmin()">Logout</button>
+</div>
 
-  <script>
-    // Supabase Configuration
-    const SUPABASE_URL =
-      "https://kuedivxgrykctfnopmpf.supabase.co";
+<div id="manageList" style="margin-top:18px"></div>
+</div>
+</div>
+</div>
+</section>
 
-    const SUPABASE_PUBLISHABLE_KEY =
-      "sb_publishable_STYnoly6v5U6tNWgRyP4tQ_FLMHPOzf";
+<section class="deal">
+<div>
+<div>BEST DEALS</div>
+<strong>UPTO 70% OFF</strong>
+<div>Don't miss today's offers!</div>
+</div>
+<a class="btn" href="#products">Shop Now →</a>
+</section>
 
-    const supabaseClient =
-      window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_PUBLISHABLE_KEY
-      );
+<section class="section">
+<h2>Why Peediya.Store?</h2>
+<div class="why">
+<div>🚚 <b>Fast Delivery</b><br><small>Kerala wide</small></div>
+<div>🛡️ <b>Trusted Products</b><br><small>Quality assured</small></div>
+<div>🏷️ <b>Affordable Prices</b><br><small>Best deals</small></div>
+<div>🎧 <b>Easy Support</b><br><small>WhatsApp support</small></div>
+</div>
+</section>
 
-    console.log("Peediya.Store + Supabase connected successfully!");
-  </script>
+<section class="section">
+<div class="story">
+<div>
+<h2>Our Story</h2>
+<p>Peediya.Store was started with a simple goal — to bring useful, trending and affordable products to customers in Kerala.</p>
+<p>We carefully select practical products and focus on great deals and easy ordering.</p>
+<a class="btn" href="#contact">Learn More →</a>
+</div>
+<div style="font-size:90px;text-align:center">🛍️✨</div>
+</div>
+</section>
+
+<section class="section">
+<div class="title">
+<h2>📸 Follow Us on Instagram</h2>
+<a href="#">@peediya.store</a>
+</div>
+<div class="ig">
+<div>⌚</div><div>🎧</div><div>🧴</div><div>🥕</div><div>🕶️</div><div>👜</div>
+</div>
+</section>
+
+<section class="section">
+<div class="title"><h2>What Our Customers Say</h2></div>
+<div class="reviews">
+<div class="review"><b>Fathima</b><div class="stars">★★★★★</div><p>Product quality super! Fast delivery too. Will definitely order again.</p></div>
+<div class="review"><b>Rizwan</b><div class="stars">★★★★★</div><p>Very good service. Affordable price and neat packaging.</p></div>
+<div class="review"><b>Ayesha</b><div class="stars">★★★★★</div><p>Loved the product! Keep up the good work, Peediya.Store ❤️</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="faq">
+<h2>FAQs</h2>
+<details><summary>How can I order?</summary><p>Click any WhatsApp order button and send your product name.</p></details>
+<details><summary>Do you deliver in Kerala?</summary><p>Yes, delivery availability and charges can be confirmed on WhatsApp.</p></details>
+<details><summary>How can I contact support?</summary><p>Use the WhatsApp button below for quick support.</p></details>
+</div>
+</section>
+
+<footer class="footer" id="contact">
+<div class="footer-in">
+<div>
+<div class="brand">Peediya.<span>Store</span></div>
+<p>Better Products | Better Deals</p>
+</div>
+<div>
+<b class="lime">Contact Us</b>
+<p>WhatsApp: +91 XXXXX XXXXX</p>
+<p>Instagram: @peediya.store</p>
+</div>
+<div>
+<b class="lime">Quick Links</b>
+<p><a href="#home">Home</a> · <a href="#products">Products</a> · <a href="#categories">Categories</a></p>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+
+<script>
+const WA='919207288645';
+let client=null, products=[], editingId=null;
+
+const fallback=[
+{name:'Mini Food Chopper',old:499,price:229,badge:'🔥 BEST SELLER',emoji:'🥕'},
+{name:'TWS Wireless Earbuds',old:899,price:249,badge:'🔥 HOT DEAL',emoji:'🎧'},
+{name:'750ml Water Bottle',old:599,price:249,badge:'🔥 TRENDING',emoji:'🧴'},
+{name:'Smart Watch',old:1299,price:399,badge:'LIMITED STOCK',emoji:'⌚'},
+{name:'LED Ring Light',old:799,price:299,badge:'POPULAR',emoji:'💡'}];
+
+function ready(){
+return window.supabase &&
+window.PEEDIYA_SUPABASE_URL &&
+!window.PEEDIYA_SUPABASE_URL.includes('YOUR-PROJECT') &&
+window.PEEDIYA_SUPABASE_ANON_KEY &&
+!window.PEEDIYA_SUPABASE_ANON_KEY.includes('YOUR-ANON');
+}
+
+if(ready()) client=supabase.createClient(window.PEEDIYA_SUPABASE_URL,window.PEEDIYA_SUPABASE_ANON_KEY);
+
+function escapeHtml(x){
+return String(x??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+}
+
+function render(){
+const grid=document.getElementById('productGrid');
+
+grid.innerHTML=products.map(p=>`
+<div class="product">
+<div class="pic">
+${p.image_url?`<img src="${escapeHtml(p.image_url)}" style="width:100%;height:100%;object-fit:cover">`:escapeHtml(p.emoji||'🛍️')}
+</div>
+<div class="info">
+<span class="badge">${escapeHtml(p.badge||'TRENDING')}</span>
+<h3>${escapeHtml(p.name)}</h3>
+<span class="old">₹${Number(p.old_price||0).toLocaleString('en-IN')}</span>
+<span class="price">₹${Number(p.price||0).toLocaleString('en-IN')}</span>
+<a class="order" href="https://wa.me/${WA}?text=${encodeURIComponent('Hi Peediya.Store, I want to order: '+p.name+' for ₹'+p.price)}" target="_blank">💬 Order on WhatsApp</a>
+</div>
+</div>`).join('');
+
+const list=document.getElementById('manageList');
+if(!list)return;
+
+list.innerHTML=products.map(p=>`
+<div class="manage-item">
+<div>
+${p.image_url?`<img src="${escapeHtml(p.image_url)}">`:`<div style="font-size:35px;width:50px;text-align:center">${escapeHtml(p.emoji||'🛍️')}</div>`}
+</div>
+<div class="manage-text">
+<b>${escapeHtml(p.name)}</b><br>
+<span>₹${Number(p.price||0).toLocaleString('en-IN')}</span>
+</div>
+<div class="manage-actions">
+<button class="small-btn edit-btn" onclick="editProduct('${p.id}')">✏️ Edit</button>
+<button class="small-btn danger" onclick="deleteProduct('${p.id}')">🗑️ Delete</button>
+</div>
+</div>`).join('');
+}
+
+async function loadProducts(){
+if(!client){
+products=fallback;
+render();
+return;
+}
+
+const {data,error}=await client.from('products').select('*').order('created_at',{ascending:false});
+
+if(error){
+console.error(error);
+products=[];
+document.getElementById('loginStatus').textContent='Database error: '+error.message;
+}else{
+products=data||[];
+render();
+}
+}
+
+function toggleAdmin(){
+const x=document.getElementById('adminPanel');
+x.style.display=x.style.display==='none'?'block':'none';
+}
+
+async function loginAdmin(){
+if(!client){
+alert('First add Supabase URL and anon/public key in config.js.');
+return;
+}
+
+const email=document.getElementById('loginEmail').value.trim();
+const password=document.getElementById('loginPassword').value;
+
+if(!email||!password){
+alert('Email and password enter cheyyuka.');
+return;
+}
+
+const {error}=await client.auth.signInWithPassword({email,password});
+
+document.getElementById('loginStatus').textContent=error?error.message:'Login successful!';
+
+if(!error){
+document.getElementById('loginBox').style.display='none';
+document.getElementById('editorBox').style.display='block';
+loadProducts();
+}
+}
+
+async function logoutAdmin(){
+if(client)await client.auth.signOut();
+editingId=null;
+clearForm();
+document.getElementById('loginBox').style.display='block';
+document.getElementById('editorBox').style.display='none';
+}
+
+async function checkSession(){
+if(!client)return;
+
+const {data}=await client.auth.getSession();
+
+if(data.session){
+document.getElementById('loginBox').style.display='none';
+document.getElementById('editorBox').style.display='block';
+}
+}
+
+function clearForm(){
+editingId=null;
+
+['pName','pOld','pPrice','pBadge','pEmoji'].forEach(id=>document.getElementById(id).value='');
+
+document.getElementById('pImage').value='';
+document.getElementById('saveBtn').textContent='➕ Add Product';
+document.getElementById('cancelBtn').style.display='none';
+}
+
+function editProduct(id){
+const p=products.find(x=>String(x.id)===String(id));
+if(!p)return;
+
+editingId=p.id;
+document.getElementById('pName').value=p.name||'';
+document.getElementById('pOld').value=p.old_price||'';
+document.getElementById('pPrice').value=p.price||'';
+document.getElementById('pBadge').value=p.badge||'';
+document.getElementById('pEmoji').value=p.emoji||'';
+document.getElementById('pImage').value='';
+document.getElementById('saveBtn').textContent='💾 Save Changes';
+document.getElementById('cancelBtn').style.display='inline-block';
+document.getElementById('adminPanel').scrollIntoView({behavior:'smooth'});
+}
+
+async function uploadImage(file){
+if(!file)return null;
+
+const path=Date.now()+'-'+file.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+
+const {error}=await client.storage.from('product-images').upload(path,file,{upsert:false});
+
+if(error)throw error;
+
+const {data}=client.storage.from('product-images').getPublicUrl(path);
+
+return data.publicUrl;
+}
+
+async function saveProduct(){
+if(!client){
+alert('Supabase setup complete cheythittilla.');
+return;
+}
+
+const name=document.getElementById('pName').value.trim();
+const old=Number(document.getElementById('pOld').value);
+const price=Number(document.getElementById('pPrice').value);
+const badge=document.getElementById('pBadge').value.trim()||'🔥 TRENDING';
+const emoji=document.getElementById('pEmoji').value.trim()||'🛍️';
+const file=document.getElementById('pImage').files[0];
+
+if(!name||!price){
+alert('Product name and selling price required.');
+return;
+}
+
+try{
+let image_url=null;
+
+if(file)image_url=await uploadImage(file);
+
+const payload={
+name,
+old_price:old||price,
+price,
+badge,
+emoji
+};
+
+if(image_url)payload.image_url=image_url;
+
+if(editingId){
+const {error}=await client.from('products').update(payload).eq('id',editingId);
+
+if(error)throw error;
+
+alert('Product updated!');
+}else{
+if(!image_url)payload.image_url=null;
+
+const {error}=await client.from('products').insert(payload);
+
+if(error)throw error;
+
+alert('Product added!');
+}
+
+clearForm();
+await loadProducts();
+
+}catch(e){
+alert('Error: '+e.message);
+}
+}
+
+async function deleteProduct(id){
+if(!confirm('Delete this product?'))return;
+
+const {error}=await client.from('products').delete().eq('id',id);
+
+if(error){
+alert('Error: '+error.message);
+}else{
+if(String(editingId)===String(id))clearForm();
+await loadProducts();
+}
+}
+
+loadProducts();
+checkSession();
+</script>
 
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                        </html>                                                                                                                                                                                                                                                        
